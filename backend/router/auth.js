@@ -6,10 +6,6 @@ const authenticate = require("../middleware/authenticate");
 const bcrypt = require("bcryptjs");
 const JWT = require("jsonwebtoken");
 
-router.get("/", (req, res) => {
-  res.send("Hello from route");
-});
-
 router.post("/register", async (req, res) => {
   const { name, email, phone, work, password, cpassword } = req.body; //Object Destructuring
 
