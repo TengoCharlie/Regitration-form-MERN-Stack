@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
-import thapapic from "../images/thapa1.png";
+
 import aboutpic from "../images/aboutpic.png";
 
 const About = () => {
@@ -44,7 +44,7 @@ const About = () => {
           <div className="row">
             <div className="col-md-4">
               <div className="profile-img">
-                <img src={userData ? thapapic : aboutpic} alt="thapa" />
+                <img src={aboutpic} alt="thapa" />
               </div>
             </div>
 

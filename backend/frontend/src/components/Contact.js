@@ -105,7 +105,7 @@ const Contact = () => {
                   </div>
                   <div className="contact_info_content">
                     <div className="contact_info_title">Email</div>
-                    <div className="contact_info_text">contact@thapa.com</div>
+                    <div className="contact_info_text">contact@harsh.com</div>
                   </div>
                 </div>
                 <div className="contact_info_item d-flex flex-row align-items-center justify-content-start">

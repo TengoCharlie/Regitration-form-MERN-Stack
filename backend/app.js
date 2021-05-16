@@ -32,6 +32,14 @@ app.get("/signup", (req, res) => {
   res.send("Hello World in signup");
 });
 
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static("client/build"));
+  const path = require("path");
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolved(__dirname, "client", "build", "index.html"));
+  });
+}
+
 PORT = process.env.PORT || 5500;
 app.listen(PORT, () => {
   console.log(`Port is listening on ${PORT}`);
